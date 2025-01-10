@@ -15,42 +15,18 @@ Crypto Data Fetcher API
 1. Fetch Latest Statistics
 Endpoint: /api/crypto/stats
 Method: GET
-Query Parameters:
-coin (string): One of bitcoin, ethereum, or matic-network.
-Response:
-json
-Copy code
-{
-    "price": 40000,
-    "marketCap": 800000000,
-    "24hChange": 3.4
-}
-Example:
-ruby
 Copy code
 GET https://crypto-data-fetcher.onrender.com/api/crypto/stats?coin=bitcoin
 2. Calculate Standard Deviation
 Endpoint: /api/crypto/deviation
 Method: GET
-Query Parameters:
-coin (string): One of bitcoin, ethereum, or matic-network.
-Response:
-json
-Copy code
-{
-    "deviation": 4082.48
-}
-Example:
-ruby
 Copy code
 GET https://crypto-data-fetcher.onrender.com/api/crypto/deviation?coin=bitcoin
-How It Works
-Background Job:
 
-A cron job runs every 2 hours to fetch the latest cryptocurrency data using the CoinGecko API and stores it in MongoDB.
-Database:
+# How It Works
+ 1. A cron job runs every 2 hours to fetch the latest cryptocurrency data using the CoinGecko API and stores it in MongoDB.
 
-Stores cryptocurrency details such as price, market cap, and 24-hour change.
+ 2. Stores cryptocurrency details such as price, market cap, and 24-hour change.
 
 
 # Technologies Used
