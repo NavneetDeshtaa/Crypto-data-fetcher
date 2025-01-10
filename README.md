@@ -92,5 +92,4 @@ Set up an account on Render.
 Create a new web service and link it to your GitHub repository.
 Add environment variables in the Render dashboard.
 Deploy your application.
-License
-This project is licensed under the MIT License.
+
