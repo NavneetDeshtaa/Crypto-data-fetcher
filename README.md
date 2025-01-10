@@ -4,6 +4,9 @@ A Node.js and MongoDB-based API that fetches and stores cryptocurrency data (Bit
 # API Endpoints
 1. Fetch Latest Statistics
 Endpoint: /api/crypto/stats
+Example :
+GET https://crypto-data-fetcher.onrender.com/api/crypto/stats?coin=bitcoin
+
 
 3. Calculate Standard Deviation
 Endpoint: /api/crypto/deviation
