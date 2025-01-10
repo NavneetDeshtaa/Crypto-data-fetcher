@@ -14,6 +14,10 @@ app.use(express.json());
 
 
 // Routes
+app.get('/', (req, res) => {
+    res.send('Welcome to the Crypto API. Use endpoints like /api/crypto/stats or /api/crypto/deviation');
+});
+
 app.use('/api/crypto', require('./routes/crypto'));
 app.use('/api', cryptoRoutes);
 
